@@ -2,7 +2,7 @@
 
 Assistente de perguntas e respostas sobre documentos, com RAG (busca nos documentos antes de responder) e avaliação da qualidade da busca.
 
-Projeto de estudo em construção. Os documentos em `docs/` são exemplos fictícios escritos para este projeto.
+Projeto de estudo. Os documentos em `docs/` são exemplos fictícios escritos para este projeto.
 
 ## Etapas
 
@@ -10,7 +10,7 @@ Projeto de estudo em construção. Os documentos em `docs/` são exemplos fictí
 - [x] 2. Busca por significado (embeddings)
 - [x] 3. Resposta com fontes (LLM opcional)
 - [x] 4. API e avaliação da busca
-- [ ] 5. Docker e CI
+- [x] 5. Docker e CI
 
 ## Rodar os testes
 
@@ -74,3 +74,16 @@ Limitações, para ler os números com cuidado:
 - `GET /health` retorna `{"status": "ok"}`.
 - `POST /ask` com `{"question": "...", "k": 3}` retorna `{"answer": "...", "sources": ["[1] arquivo.md (trecho N)"]}`.
 - Documentação interativa em `http://127.0.0.1:8000/docs`.
+
+## Docker
+
+```bash
+docker build -t askdocs .
+docker run -p 8000:8000 askdocs
+```
+
+Status: o `Dockerfile` foi escrito, mas **não foi construído nem executado** no ambiente em que o projeto foi desenvolvido (sem Docker instalado). Trate-o como não verificado até rodar o build.
+
+## CI
+
+O workflow em `.github/workflows/ci.yml` roda os testes a cada push na `main` e em pull requests. Os testes usam um embedder simulado, então não baixam o modelo de busca.
