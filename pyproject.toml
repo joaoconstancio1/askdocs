@@ -3,7 +3,7 @@ name = "askdocs"
 version = "0.1.0"
 description = "Ask your documents anything. Get answers with sources."
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["fastembed>=0.4", "numpy>=1.26"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
