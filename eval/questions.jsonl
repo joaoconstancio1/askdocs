@@ -1,0 +1,21 @@
+{"question": "Como funciona a numeração das versões?", "expected": "versionamento semântico"}
+{"question": "Quando o número da build muda?", "expected": "O número de build é sempre incrementado"}
+{"question": "Qual a porcentagem inicial de usuários na liberação gradual?", "expected": "5% dos usuários"}
+{"question": "Qual taxa de falhas faz parar a liberação?", "expected": "taxa de falhas passar de 1%"}
+{"question": "Como desligar uma funcionalidade nova sem publicar uma versão?", "expected": "configuração remota"}
+{"question": "De qual branch sai a release?", "expected": "branch de release criada a partir da main"}
+{"question": "Por que não alterar o estado diretamente?", "expected": "Todo estado é imutável"}
+{"question": "Quando escolher BLoC em vez de Cubit?", "expected": "BLoC quando é preciso tratar sequências de eventos"}
+{"question": "Quais estados uma tela que depende de dados precisa ter?", "expected": "inicial, carregando, sucesso e erro"}
+{"question": "O que a tela de erro deve oferecer ao usuário?", "expected": "tentar de novo"}
+{"question": "Como tratar o carregamento quando a resposta chega em streaming?", "expected": "enquanto chegam partes da resposta"}
+{"question": "Onde guardar tokens no celular?", "expected": "armazenamento seguro do sistema"}
+{"question": "Como impedir interceptação em telas de pagamento?", "expected": "fixar o certificado do servidor"}
+{"question": "O que acontece quando o token de acesso expira?", "expected": "renova em segundo plano"}
+{"question": "O que não pode aparecer nos logs de erro?", "expected": "Logs de erro não podem conter"}
+{"question": "Posso colocar a chave de API dentro do app?", "expected": "Chaves de API não devem ser colocadas dentro do aplicativo"}
+{"question": "Qual é a capital da França?", "expected": null}
+{"question": "Como configurar um cluster Kubernetes?", "expected": null}
+{"question": "Qual o preço do plano premium?", "expected": null}
+{"question": "Quem ganhou a Copa do Mundo de 2022?", "expected": null}
+{"question": "Como assar um bolo de cenoura?", "expected": null}

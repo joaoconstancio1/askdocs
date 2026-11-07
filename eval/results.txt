@@ -1,0 +1,14 @@
+Perguntas com resposta: 16 | sem resposta: 5
+hit@1: 68.8%
+hit@3: 100.0%
+Score do 1º resultado, com resposta: mín 0.293, máx 0.697
+Score do 1º resultado, sem resposta: mín 0.014, máx 0.298
+
+limite | com resposta mantidas | sem resposta recusadas
+0.20   | 100%                  | 80%
+0.25   | 100%                  | 80%
+0.30   | 94%                  | 100%
+0.35   | 94%                  | 100%
+0.40   | 88%                  | 100%
+0.45   | 75%                  | 100%
+0.50   | 56%                  | 100%
